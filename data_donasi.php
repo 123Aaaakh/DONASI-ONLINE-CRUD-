@@ -25,6 +25,12 @@
         <tbody>
             <?php
             include 'koneksi.php';
+            
+            session_start();
+            if ($_SESSION['is_login'] != true) {
+                header("Location:login.php?pesan=Silahkan Lomgin terlebih dahulu");
+            }
+
             $query = "SELECT * FROM donasi";
             $result = mysqli_query($conn, $query);
 

@@ -1,4 +1,9 @@
 <?php
+session_start();
+if ($_SESSION['is_login'] != true) {
+    header("Location:login.php?pesan=Silahkan Lomgin terlebih dahulu");
+}
+
 include 'koneksi.php';
 $Id = $_GET['Id'];
 
@@ -17,6 +22,12 @@ $row = mysqli_fetch_assoc($result);
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container">
+            <a href="index.php" class="navbar-brand text-white fw-bold">PEDULI LINDUNGI</a>
+            <a href="logout.php" class="btn btn-danger">Logout</a>
+        </div>
+    </nav>
     <div class="container">
     <center><h1>Tambah Data Donasi</h1></center>
 

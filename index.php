@@ -11,11 +11,11 @@
 <body>
     <nav class="navbar navbar-expand bg-dark sticky-top">
     <div class="container">
-            <a href="index.php" class="navbar-brand text-white fw-bold">SMANCOL</a>
+            <a href="index.php" class="navbar-brand text-white fw-bold">PEDULI LINDUNGI</a>
             <?php
             session_start();
             if ($_SESSION['is_login'] != true) { ?>
-            <a href="" class="btn btn-outline-primary">Loginkan</a>
+            <a href="login.php" class="btn btn-outline-primary">Loginkan</a>
             <?php } else { ?> 
                 <div>
                     <a href="data_donasi.php" class="btn btn-outline-primary">Dashboard</a>
@@ -27,7 +27,7 @@
 
     <div class="text-white text-center py-5" style="background: url('img/nighttime.webp'); background-size: cover; background-position: center;">
         <div class="container">
-            <h1 class="fw-bold">SMANCOL GACOR</h1>
+            <h1 class="fw-bold">Peduli Lindungi</h1>
             <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
             <div class="row bg-dark border border-light py-2 mt-5">
