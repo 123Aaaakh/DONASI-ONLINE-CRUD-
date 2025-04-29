@@ -1,1 +1,1 @@
-done bang
+# CRUD FOR ALL
